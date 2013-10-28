@@ -78,7 +78,7 @@ class window.Track
 
   this.renderSearchResult = (res, click, artistClick, albumClick) =>
     $r = $("<li>").addClass("result").addClass("track").click () =>
-      click(res.key, res.name, res.artist, res.album, res.albumKey, res.icon, res.duration)
+      click(res.key, res.name, res.artist, res.artistKey, res.album, res.albumKey, res.icon, res.duration)
     $r.append $("<img>").addClass("icon").attr("src", res.icon)
     $r.append $("<span>").addClass("name").text(res.name)
     $from = $("<div>").addClass("details")
